@@ -36,10 +36,15 @@
         <img src="img/location-svgrepo-com.svg" alt="location icon" width="25px" height="25px">
         <h4>Addis Ababa, Ethiopia</h4>
         <div>
-            <form><h4>Name</h4><input type="text" placeholder="Name"></form>
-            <form><h4>Email</h4><input type="email" placeholder="Email"></form>
-            <form ><h4>Message</h4><input type="text"></form>
-            <button>Send</button>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email">
+                <label for="message">Message</label>
+                <input type="text">
+                <button>Send</button>
+            </form>
         </div>
     </main>
     <div class="footer">
@@ -52,8 +57,10 @@
             </ul>
         </div>
         <div>
-            <label for="email">Subscribe to our mailing list</label>
-            <form ><input type="email" id="email" placeholder="Enter email address"><input type="submit" value="Subscribe"></form>
+            <form >
+                <label for="email">Subscribe to our mailing list</label>
+                <input type="email" id="email" placeholder="Enter email address"><input type="submit" value="Subscribe">
+            </form>
         </div><br>
         <div>
             <img src="img/linkedin-svgrepo-com.svg" alt="linkedin logo" width="20px" height="20px">
