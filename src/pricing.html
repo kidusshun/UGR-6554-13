@@ -4,105 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pricing_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Pricing</title>
 </head>
 <body>
-    <div class="header">
-        <div class="wrapper">
-            <a class="logo"href="index.html">
-                <img src="img/LEARNIT(1).png" alt="learnit logo" width="100px" height="20px">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="features.html">Features</a href=""></li>
-                    <li><a href="pricing.html">Pricing</a href=""></li>
-                    <li><a href="About.html">About us</a href=""></li>
-                    <li><a href="contact.html">Contact</a href=""></li>
-                </ul>
-                <div>
-                    <ul>
-                        <li><a href="login.html">Login</a href=""></li>
-                        <li><a href="login.html">Get Started</a href=""></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <main>
-        <h1>Choose the right plan for you</h1>
-        <div class="price1">
-            <h3>Basic Plan</h3>
-            <h4>Best for mini courses</h4>
-            <h2>$99/month</h2>
-            <button>Get started</button>
-            <ul>
-                <li>design custom website</li>
-                <li>process payment</li>
-                <li>host course content</li>
-                <li>serve upto 1000 users per month</li>
-                <li>Multiple language support</li>
-            </ul>
-        </div>
-        <div class="price2">
-            <h3>Pro Plan</h3>
-            <h4>Best for full length courses</h4>
-            <h2>$249/month</h2>
-            <button>Get started</button>
-            <ul>
-                <li>design custom website</li>
-                <li>process payment</li>
-                <li>host course content</li>
-                <li>serve upto 10000 users per month</li>
-                <li>Multiple language support</li>
-                <li>access to advanced course creation tools and features</li>
-                <li>video conferencing</li>
-            </ul>
-        </div>
-        <div class="price3">
-            <h3>Ultimate plan</h3>
-            <h4>Best for premium price courses/mentoring</h4>
-            <h2>$749/month</h4>
-            <button>Get started</button>
-            <ul>
-                <li>design custom website</li>
-                <li>process payment</li>
-                <li>host course content</li>
-                <li>serve upto 100000 users per month</li>
-                <li>Multiple language support</li>
-                <li>access to advanced course creation tools and features</li>
-                <li>video conferencing</li>
-                <li>Discussion platform</li>
-                <li>leaderboards</li>
-                <li>one on one consultations</li>
-                <li>multi-tiered pricing structures</li>
-            </ul>
-        </div>
-    </main>
-    <div class="footer">
-        <div>
-            <ul>
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img src="img/LEARNIT.png" alt="learnit logo" width="100px" height="30px">
+        </a>
+        <nav>
+            <ul class="links">
                 <li><a href="features.html">Features</a href=""></li>
                 <li><a href="pricing.html">Pricing</a href=""></li>
                 <li><a href="About.html">About us</a href=""></li>
                 <li><a href="contact.html">Contact</a href=""></li>
             </ul>
-        </div>
-        <div>
-            <form >
-                <label for="email">Subscribe to our mailing list</label>
-                <input type="email" id="email" placeholder="Enter email address"><input type="submit" value="Subscribe">
-            </form>
-        </div><br>
-        <div>
-            <img src="img/linkedin-svgrepo-com.svg" alt="linkedin logo" width="20px" height="20px">
-            <img src="img/twitter-svgrepo-com.svg" alt="twitter logo" width="20px" height="20px">
-            <img src="img/facebook-svgrepo-com.svg" alt="facebook logo" width="20px" height="20px">
-            <img src="img/instagram-f-svgrepo-com.svg" alt="instagram logo" width="20px" height="20px">
-            <div>
-                Terms of Use <br>
-                Privacy policy
+        </nav>
+            <div class="log_links_wrapper">
+                <ul class="log_links">
+                    <a href="login.html">Login</a href="">
+                    <button>Get Started</button>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>choose your plan</h1>
+            <div class="price-row">
+                <div class="price-col">
+                    <h2>Basic Plan</h2>
+                    <p>Best for mini courses</p>
+                    <h3>$99<span>/month</span></h3>
+                    <button>Get started</button>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i>design custom website</li>
+                        <li><i class="fa-solid fa-circle-check"></i>process payment</li>
+                        <li><i class="fa-solid fa-circle-check"></i>host course content</li>
+                        <li><i class="fa-solid fa-circle-check"></i>serve up to 1000 monthly users </li>
+                        <li><i class="fa-solid fa-circle-check"></i>multiple language support</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>access to advanced course creation tools and features</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>video conferencing</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>discussion platform</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>leaderboards</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>one on one consultations</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>multi-tiered pricing structures</li>
+                    </ul>
+                </div>
+                <div class="price-col center">
+                    <h2>Pro Plan</h2>
+                    <p>Best for full length courses</p>
+                    <h3>$249<span>/month</span></h3>
+                    <button>Get started</button>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i>design custom website</li>
+                        <li><i class="fa-solid fa-circle-check"></i>process payment</li>
+                        <li><i class="fa-solid fa-circle-check"></i>host course content</li>
+                        <li><i class="fa-solid fa-circle-check"></i>serve up to 1000 monthly users </li>
+                        <li><i class="fa-solid fa-circle-check"></i>multiple language support</li>
+                        <li><i class="fa-solid fa-circle-check"></i>access to advanced course creation tools and features</li>
+                        <li><i class="fa-solid fa-circle-check"></i>video conferencing</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>discussion platform</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>leaderboards</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>one on one consultations</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i>multi-tiered pricing structures</li>
+                    </ul>
+                </div>
+                <div class="price-col">
+                    <h2>Ultimate Plan</h2>
+                    <p>Best for premium price courses</p>
+                    <h3>$749<span>/month</span></h3>
+                    <button>Get started</button>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i>design custom website</li>
+                        <li><i class="fa-solid fa-circle-check"></i>process payment</li>
+                        <li><i class="fa-solid fa-circle-check"></i>host course content</li>
+                        <li><i class="fa-solid fa-circle-check"></i>serve up to 1000 monthly users </li>
+                        <li><i class="fa-solid fa-circle-check"></i>multiple language support</li>
+                        <li><i class="fa-solid fa-circle-check"></i>access to advanced course creation tools and features</li>
+                        <li><i class="fa-solid fa-circle-check"></i>video conferencing</li>
+                        <li><i class="fa-solid fa-circle-check"></i>discussion platform</li>
+                        <li><i class="fa-solid fa-circle-check"></i>leaderboards</li>
+                        <li><i class="fa-solid fa-circle-check"></i>one on one consultations</li>
+                        <li><i class="fa-solid fa-circle-check"></i>multi-tiered pricing structures</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer class="footer">
+        <div class="foot-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>navigate</h4>
+                    <ul>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">About US</a></li>
+                        <li><a href="">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <form >
+                        <div class="input-box">
+                            <label for="email"><h4>Subscribe to our mailing list</h4></label>
+                            <input type="email" id="email" placeholder="Enter email address" required><input class="submitt-button w-button" type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

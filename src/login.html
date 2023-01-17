@@ -4,84 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Login</title>
 </head>
 <body>
-    <div class="header">
-        <div class="wrapper">
-            <a class="logo"href="index.html">
-                <img src="img/LEARNIT(1).png" alt="learnit logo" width="100px" height="20px">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="features.html">Features</a href=""></li>
-                    <li><a href="pricing.html">Pricing</a href=""></li>
-                    <li><a href="About.html">About us</a href=""></li>
-                    <li><a href="contact.html">Contact</a href=""></li>
-                </ul>
-                <div>
-                    <ul>
-                        <li><a href="login.html">Login</a href=""></li>
-                        <li><a href="login.html">Get Started</a href=""></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <main>
-        <img src="img/LEARNIT(1).png" alt="learnit logo" width="100px" height="20px">
-        <form>
-            <label for="login_email">Email</label>
-            <input type="email" id="login_email" placeholder="Enter email address">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="password">
-            <button>Continue</button>
-        </form>
-        <h5>OR</h5>
-        <button><img src="img/google-g-2015-logo-svgrepo-com.svg" alt="google logo" width="25px" height="25px">Continue with Google</button><br>
-        <button><img src="img/microsoft-svgrepo-com.svg" alt="microsoft logo" width="25px" height="25px">Continue with Microsoft</button><br>
-        <button><img src="img/facebook-network-communication-internet-interaction-svgrepo-com.svg" alt="facebook logo" width="25px" height="25px">Continue with facebook</button>
-        <h3>Don't have an account?</h3>
-        <form action="">
-            <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Username">
-            <label for="new_email">Email</label>
-            <input type="email" id="new_email" placeholder="Enter email address">
-            <label for="new_password">Password</label>
-            <input type="password" id="new_password" placeholder="password">
-            <label for="confirm_password">Confirm Password</label>
-            <input type="password" id="confirm_password" placeholder="confirm password">
-        </form>
-        <h5>OR</h5>
-        <button><img src="img/google-g-2015-logo-svgrepo-com.svg" alt="google logo" width="25px" height="25px">Signup with Google</button><br>
-        <button><img src="img/microsoft-svgrepo-com.svg" alt="microsoft logo" width="25px" height="25px">Signup with Microsoft</button><br>
-        <button><img src="img/facebook-network-communication-internet-interaction-svgrepo-com.svg" alt="facebook logo" width="25px" height="25px">Signup with facebook</button>
-    </main>
-    <div class="footer">
-        <div>
-            <ul>
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img src="img/LEARNIT.png" alt="learnit logo" width="100px" height="30px">
+        </a>
+        <nav>
+            <ul class="links">
                 <li><a href="features.html">Features</a href=""></li>
                 <li><a href="pricing.html">Pricing</a href=""></li>
                 <li><a href="About.html">About us</a href=""></li>
                 <li><a href="contact.html">Contact</a href=""></li>
             </ul>
-        </div>
-        <div>
-            <form >
-                <label for="email">Subscribe to our mailing list</label>
-                <input type="email" id="email" placeholder="Enter email address"><input type="submit" value="Subscribe">
+        </nav>
+            <div class="log_links_wrapper">
+                <ul class="log_links">
+                    <a href="login.html">Login</a href="">
+                    <button id="button">Get Started</button>
+                </ul>
+            </div>
+    </header>
+    </div>
+    <main>
+        <div class="form-box">
+            <img src="img/LEARNIT.png" alt="learnit logo" width="100px" height="30px">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
+            </div>
+            <form id="login" class="input-group">
+                <label for="login_email"></label>
+                <input type="email" class="input-field" placeholder="Enter Email address" required>
+                <label for="password"></label>
+                <input type="password" class="input-field" placeholder="password" required>
+                <button type="submit" class="submit-btn">continue</button>
+                <h4>OR</h4>
+                <div class="bt">
+                    <button type="submit" class="login google"><img src="img/google-g-2015-logo-svgrepo-com.svg" alt="google logo" width="25px" height="25px"><span>Continue with google</span></button>
+                    <button type="submit" class="login microsoft"><img src="img/microsoft-svgrepo-com.svg" alt="microsoft logo" width="25px" height="25px"><span>Continue with Microsoft</span></button>
+                    <button type="submit" class="login facebook"><img src="img/facebook-network-communication-internet-interaction-svgrepo-com.svg" alt="facebook logo" width="25px" height="25px"><span>Continue with Facebook</span></button>
+                </div>
             </form>
-        </div><br>
-        <div>
-            <img src="img/linkedin-svgrepo-com.svg" alt="linkedin logo" width="20px" height="20px">
-            <img src="img/twitter-svgrepo-com.svg" alt="twitter logo" width="20px" height="20px">
-            <img src="img/facebook-svgrepo-com.svg" alt="facebook logo" width="20px" height="20px">
-            <img src="img/instagram-f-svgrepo-com.svg" alt="instagram logo" width="20px" height="20px">
-            <div>
-                Terms of Use <br>
-                Privacy policy
+
+            <form id="signup" class="input-group">
+                <label for="username"></label>
+                <input type="text" class="input-field" id="username" placeholder="Username" required>
+                <label for="new_email"></label>
+                <input type="email" class="input-field" id="new_email" placeholder="Enter email address" required>
+                <label for="new_password"></label>
+                <input type="password" class="input-field" id="new_password" placeholder="password" required>
+                <label for="confirm_password"></label>
+                <input type="password" class="input-field" id="confirm_password" placeholder="confirm password" required>
+                <button type="submit" class="submit-btn">Signup</button>
+                <h4>OR</h4>
+                <button type="submit" class="login google"><img src="img/google-g-2015-logo-svgrepo-com.svg" alt="google logo" width="25px" height="25px"><span>Sign up with google</span></button>
+                <button type="submit" class="login microsoft"><img src="img/microsoft-svgrepo-com.svg" alt="microsoft logo" width="25px" height="25px"><span>Sign up with Microsoft</span></button>
+                <button type="submit" class="login facebook"><img src="img/facebook-network-communication-internet-interaction-svgrepo-com.svg" alt="facebook logo" width="25px" height="25px"><span>Sign up with Facebook</span></button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="foot-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>navigate</h4>
+                    <ul>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">About US</a></li>
+                        <li><a href="">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <form >
+                        <div class="input-box">
+                            <label for="email"><h4>Subscribe to our mailing list</h4></label>
+                            <input type="email" id="email" placeholder="Enter email address" required><input class="submitt-button w-button" type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
+    <script src="login-script.js"></script>
 </body>
 </html>

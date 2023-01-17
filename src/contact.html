@@ -4,74 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>contact</title>
 </head>
 <body>
-    <div class="header">
-        <div class="wrapper">
-            <a class="logo"href="index.html">
-                <img src="img/LEARNIT(1).png" alt="learnit logo" width="100px" height="20px">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="features.html">Features</a href=""></li>
-                    <li><a href="pricing.html">Pricing</a href=""></li>
-                    <li><a href="About.html">About us</a href=""></li>
-                    <li><a href="contact.html">Contact</a href=""></li>
-                </ul>
-                <div>
-                    <ul>
-                        <li><a href="login.html">Login</a href=""></li>
-                        <li><a href="login.html">Get Started</a href=""></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <main>
-        <img src="img/phone-slant-fill-svgrepo-com.svg" alt="phone icon" width="25px" height="25px">
-        <h4>+251498754907</h4>
-        <img src="img/mail-unread-symbolic-svgrepo-com.svg" alt="mail icon" width="25px" height="25px">
-        <h4>customerservice@learnit.com</h4>
-        <img src="img/location-svgrepo-com.svg" alt="location icon" width="25px" height="25px">
-        <h4>Addis Ababa, Ethiopia</h4>
-        <div>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Name">
-                <label for="sending_email">Email</label>
-                <input type="email" id="sending_email" placeholder="Email">
-                <label for="message">Message</label>
-                <input type="text" id="message">
-                <button>Send</button>
-            </form>
-        </div>
-    </main>
-    <div class="footer">
-        <div>
-            <ul>
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img src="img/LEARNIT.png" alt="learnit logo" width="100px" height="30px">
+        </a>
+        <nav>
+            <ul class="links">
                 <li><a href="features.html">Features</a href=""></li>
                 <li><a href="pricing.html">Pricing</a href=""></li>
                 <li><a href="About.html">About us</a href=""></li>
                 <li><a href="contact.html">Contact</a href=""></li>
             </ul>
-        </div>
-        <div>
-            <form >
-                <label for="email">Subscribe to our mailing list</label>
-                <input type="email" id="email" placeholder="Enter email address"><input type="submit" value="Subscribe">
-            </form>
-        </div><br>
-        <div>
-            <img src="img/linkedin-svgrepo-com.svg" alt="linkedin logo" width="20px" height="20px">
-            <img src="img/twitter-svgrepo-com.svg" alt="twitter logo" width="20px" height="20px">
-            <img src="img/facebook-svgrepo-com.svg" alt="facebook logo" width="20px" height="20px">
-            <img src="img/instagram-f-svgrepo-com.svg" alt="instagram logo" width="20px" height="20px">
-            <div>
-                Terms of Use <br>
-                Privacy policy
+        </nav>
+            <div class="log_links_wrapper">
+                <ul class="log_links">
+                    <a href="login.html">Login</a href="">
+                    <button class="get-started">Get Started</button>
+                </ul>
+            </div>
+    </header>
+    <body>
+        <section class="contact">
+            <div class="content">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="container">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="text">
+                            <p><i class="fa-solid fa-phone"></i>+251498754907</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <p><i class="fa-sharp fa-solid fa-envelope"></i>service@learnit.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <p><i class="fa-solid fa-location-dot"></i>Addis Ababa, Ethiopia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form >
+                        <h2>Send us a message</h2>
+                        <div class="inputBox">
+                            <label for="name">Name</label>
+                            <input type="text" name="" required>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="inputBox">
+                            <label for="name">Email</label>
+                            <input type="text" name=""  required>
+                            <i class="fa-sharp fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="inputBox">
+                            <label for="name">Message</label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer class="footer">
+        <div class="foot-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>navigate</h4>
+                    <ul>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">About US</a></li>
+                        <li><a href="">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <form >
+                        <div class="input-box">
+                            <label for="email"><h4>Subscribe to our mailing list</h4></label>
+                            <input type="email" id="email" placeholder="Enter email address" required>
+                            <input class="submitt-button w-button" type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
