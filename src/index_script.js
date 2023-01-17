@@ -2,7 +2,8 @@ var firstBox=document.getElementById("first");
 var secondBox=document.getElementById("second");
 var thirdBox=document.getElementById("third");
 
-function firstBar(){
+function firstBar(width){
+    if(width>32)
     firstBox.style.left="150px";
     secondBox.style.left="2000px";
     thirdBox.style.left="3000px";

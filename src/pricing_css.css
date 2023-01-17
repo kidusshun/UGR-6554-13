@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
-    text-transform: capitalize;
 }
 body{
     text-align: center;
@@ -30,13 +29,64 @@ header {
     background-image: linear-gradient(-50deg, #333, #10a8e4);
     /* position: fixed; */
 }
+
+.openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.closeMenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+@media(max-width: 801px) {
+    .links{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(-30deg, #7fffd4, #01868b);
+        transition: top 1s ease;
+        display: none;
+    }
+    .links a{
+        font-size: 1.3rem;
+    }
+    .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu{
+        display: block;
+    }
+    .links li a:hover {
+        background: none;
+        color: white;
+        font-size: 1.6rem;
+    }
+}
+
+
 .log_links_wrapper{
     margin-left: auto;
 }
 .log_links a{
     padding-right: 20px;
 }
-.log_links button{
+.log_links .get-started{
     margin-right: auto;
 }
 .logo{
@@ -60,7 +110,7 @@ li a{
 li a:hover{     
     color: #7fffd4;
 }
-button {
+.get-started {
     border: none;
     color: #fff;
     background-image: linear-gradient(-30deg, #7fffd4, #01868b);
@@ -71,7 +121,7 @@ button {
     padding: 0.6em 1.5em;
    }
    
-button:hover {
+.get-started:hover {
     background-position: right center;
     background-size: 200% auto;
     -webkit-animation: pulse 2s infinite;
@@ -97,7 +147,7 @@ button:hover {
     li,a{
         font-size: 12px;
     }
-    button{
+    .get-started{
         font-size: 12px;
     }
 }
@@ -106,7 +156,7 @@ button:hover {
     li,a{
         font-size: 11px;
     }
-    button{
+    .get-started{
         font-size: 11px;
     }
 }
@@ -115,7 +165,7 @@ button:hover {
     li,a{
         font-size: 10px;
     }
-    button{
+    .get-started{
         font-size: 10px;
     }
 }

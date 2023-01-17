@@ -6,17 +6,12 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-html{
-    width: 100%;
-}
 body{
     text-align: center;
-    background:#d2effa;
     
 }
-p{
-    color: white;
-}
+
+
 li,a {
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
@@ -34,6 +29,57 @@ header {
     background-image: linear-gradient(-50deg, #333, #10a8e4);
     /* position: fixed; */
 }
+
+.openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.closeMenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+@media(max-width: 801px) {
+    .links{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(-30deg, #7fffd4, #01868b);
+        transition: top 1s ease;
+        display: none;
+    }
+    .links a{
+        font-size: 1.3rem;
+    }
+    .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu{
+        display: block;
+    }
+    .links li a:hover {
+        background: none;
+        color: white;
+        font-size: 1.6rem;
+    }
+}
+
+
 .log_links_wrapper{
     margin-left: auto;
 }
@@ -144,7 +190,7 @@ li a:hover{
 /* content */
 .motto {
     height: 50vh;
-    max-width: 90%;
+    max-width: 80%;
     margin: 30px auto;
     justify-content: center;
     align-items: center;
@@ -185,7 +231,7 @@ h1 {
     width: 100%;
     padding:30px auto;
     text-align: center;
-    font-size:18px ;
+    font-size:16px ;
     color: black;
 }
 .background1{
@@ -225,6 +271,7 @@ h1 {
 
 .grid-wrapper{
     width: 100%;
+    height: 80vh;
     padding: 0 50px;
     background-color:#d2effa ;
 }
@@ -232,8 +279,9 @@ h1 {
 .wrapper{
     display: flex;
     justify-content: center;
+    padding-top: 50px;
     align-items: center;
-    height: 70vh;
+    height: 65vh;
     overflow: hidden;
 }
 .container{
@@ -245,9 +293,6 @@ h1 {
     border-radius: 10px;
     box-shadow: 13px 13px 15px #cbced1;
     transition: 0.5s;
-}
-#first{
-    left: 150px;
 }
 #second{
     left: 2000px;
@@ -284,8 +329,8 @@ h1 {
 
 .dot{
     background: white;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-right: 10px;
     border-radius: 50%;
     border: none;
@@ -325,6 +370,7 @@ h1 {
     }
 
 }
+
 
 
 .container > .testimonial{
@@ -394,10 +440,100 @@ h1 {
     color: #333;
 }
 
+@media only screen and (max-width: 321px){
+    .motto p{
+        font-size: 7px;
+    }
+    .grid-wrapper{
+        height: 100vh;
+    }
+    .container{
+        height: 80vh;
+    }
+    .slide p{
+        font-size: 10px;
+    }
+
+    .details .name{
+        font-size: 16px;
+    }
+    .dots{
+        margin-top: 80px;
+        height: 5px;
+    }
+    .dot{
+        width: 7px;
+        height: 7px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1025px){
+    html{
+        height: 100%;
+    }
+    .background1{
+        height: 90vh;
+    }
+    .motto{
+        width: 80%;
+        margin: 20px 70px;
+    }
+    .motto p{
+        font-size: 11px;
+    }
+    .grid-wrapper{
+        height: 100vh;
+    }
+    .container{
+        margin-top: 100px;
+        height: 60vh;
+    }
+    .slide p{
+        font-size: 11px;
+    }
+    .dots-container{
+        margin-top: 50px;
+    }
+    .details .name{
+        font-size: 14px;
+    }
+
+}
 
 
 
+@media only screen and (max-width: 375px){
+    .motto{
+        height: 80vh;
+    }
+    .motto p{
+        font-size: 7px;
+    }
+    .grid-wrapper{
+        height: 100vh;
+    }
+    .container{
+        height: 80vh;
+    }
+    .slide p{
+        font-size: 10px;
+    }
 
+    .details .name{
+        font-size: 16px;
+    }
+    .dots{
+        margin-top: 80px;
+        height: 5px;
+    }
+    .dot{
+        width: 7px;
+        height: 7px;
+    }
+
+}
 
 
 
