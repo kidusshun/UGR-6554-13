@@ -24,7 +24,7 @@
             <div class="log_links_wrapper">
                 <ul class="log_links">
                     <a href="login.html">Login</a href="">
-                    <button class="get-started">Get Started</button>
+                    <button class="get-started" onclick='navigate()'>Get Started</button>
                 </ul>
             </div>
     </header>
@@ -90,11 +90,10 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <form >
+                    <form onsubmit="subscribe();">
                         <div class="input-box">
                             <label for="email"><h4>Subscribe to our mailing list</h4></label>
-                            <input type="email" id="email" placeholder="Enter email address" required>
-                            <input class="submitt-button w-button" type="submit" value="Subscribe">
+                            <input type="email" id="email" placeholder="Enter email address" required><input class="submitt-button w-button" type="submit" value="Subscribe">
                         </div>
                     </form>
                 </div>
@@ -110,5 +109,7 @@
             </div>
         </div>
     </footer>
+    <script src="get-started.js"></script>
+    <script src="subscribe-button.js"></script>
 </body>
 </html>

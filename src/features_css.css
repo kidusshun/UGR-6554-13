@@ -149,6 +149,7 @@ h1{
     height: 50vh;
     max-width: 90%;
     margin: 30px auto;
+    padding: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +188,7 @@ p > a{
 }
 
 .content{
-    padding: 50px 150px;
+    padding: 0 150px;
     height: 70%;
     width: 80%;
     margin: auto;

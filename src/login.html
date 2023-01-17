@@ -24,7 +24,7 @@
             <div class="log_links_wrapper">
                 <ul class="log_links">
                     <a href="login.html">Login</a href="">
-                    <button id="button">Get Started</button>
+                    <button class="get-started" onclick='navigate()' id="button">Get Started</button>
                 </ul>
             </div>
     </header>
@@ -37,7 +37,7 @@
                 <button type="button" class="toggle-btn" onclick="login()">Log in</button>
                 <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
             </div>
-            <form id="login" class="input-group">
+            <form id="login" class="input-group" onsubmit="loginalert();">
                 <label for="login_email"></label>
                 <input type="email" class="input-field" placeholder="Enter Email address" required>
                 <label for="password"></label>
@@ -51,7 +51,7 @@
                 </div>
             </form>
 
-            <form id="signup" class="input-group">
+            <form id="signup" class="input-group" onsubmit="signupalert();">
                 <label for="username"></label>
                 <input type="text" class="input-field" id="username" placeholder="Username" required>
                 <label for="new_email"></label>
@@ -82,7 +82,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <form >
+                    <form onsubmit="subscribe();">
                         <div class="input-box">
                             <label for="email"><h4>Subscribe to our mailing list</h4></label>
                             <input type="email" id="email" placeholder="Enter email address" required><input class="submitt-button w-button" type="submit" value="Subscribe">
@@ -102,5 +102,9 @@
         </div>
     </footer>
     <script src="login-script.js"></script>
+    <script src="get-started.js"></script>
+    <script src="login-button.js"></script>
+    <script src="subscribe-button.js"></script>
+    
 </body>
 </html>

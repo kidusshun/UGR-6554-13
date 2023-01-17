@@ -24,7 +24,7 @@
             <div class="log_links_wrapper">
                 <ul class="log_links">
                     <a href="login.html">Login</a href="">
-                    <button>Get Started</button>
+                    <button class="get-started" onclick='navigate()'>Get Started</button>
                 </ul>
             </div>
     </header>
@@ -36,7 +36,7 @@
                     <h2>Basic Plan</h2>
                     <p>Best for mini courses</p>
                     <h3>$99<span>/month</span></h3>
-                    <button>Get started</button>
+                    <button class="get-started" onclick='navigate()'>Get started</button>
                     <ul>
                         <li><i class="fa-solid fa-circle-check"></i>design custom website</li>
                         <li><i class="fa-solid fa-circle-check"></i>process payment</li>
@@ -55,7 +55,7 @@
                     <h2>Pro Plan</h2>
                     <p>Best for full length courses</p>
                     <h3>$249<span>/month</span></h3>
-                    <button>Get started</button>
+                    <button class="get-started" onclick='navigate()'>Get started</button>
                     <ul>
                         <li><i class="fa-solid fa-circle-check"></i>design custom website</li>
                         <li><i class="fa-solid fa-circle-check"></i>process payment</li>
@@ -74,7 +74,7 @@
                     <h2>Ultimate Plan</h2>
                     <p>Best for premium price courses</p>
                     <h3>$749<span>/month</span></h3>
-                    <button>Get started</button>
+                    <button class="get-started" onclick='navigate()'>Get started</button>
                     <ul>
                         <li><i class="fa-solid fa-circle-check"></i>design custom website</li>
                         <li><i class="fa-solid fa-circle-check"></i>process payment</li>
@@ -106,7 +106,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <form >
+                    <form onsubmit="subscribe();">
                         <div class="input-box">
                             <label for="email"><h4>Subscribe to our mailing list</h4></label>
                             <input type="email" id="email" placeholder="Enter email address" required><input class="submitt-button w-button" type="submit" value="Subscribe">
@@ -125,5 +125,7 @@
             </div>
         </div>
     </footer>
+    <script src="get-started.js"></script>
+    <script src="subscribe-button.js"></script>
 </body>
 </html>

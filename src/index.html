@@ -39,11 +39,14 @@
                 <div class="motto-content">
                     <p>LEARNIT is a great way to reach and teach students from around the world. It provides an accessible platform for teachers to build their own custom website, prepare, deliver and evaluate their courses, letting them reach out to large audiences. Our website can be used to help instructors create interactive and engaging experiences, while allowing students learn materials in any order they prefer without ever having to leave the comfort of their own homes. With our website, educators benefit with the ability to maximize their teaching skills by delivering courses more efficiently, while still providing a high quality learning experience for all learners everywhere.</p>
                 </div>
-                <button>Get started</button>
+                <button class="get-started" onclick='navigate()'>Get started</button>
             </div>
         </div>
-        <div class="grid-wrapper">
-            <section class="container">    
+
+    <!-- testimonial -->
+    <div class="grid-wrapper">
+        <div class="wrapper">
+            <section id="first" class="container">    
                 <div class="testimonial">
                     <div class="testi-content">
                         <div class="slide">
@@ -59,7 +62,7 @@
                 </div>
             </section>
         
-            <section class="container">
+            <section id="second" class="container">
                 <div class="testimonial">
                     <div class="testi-content">
                         <div class="slide">
@@ -76,7 +79,7 @@
                 </div>
             </section>
         
-            <section class="container">
+            <section id="third" class="container">
                 <div class="testimonial">
                     <div class="testi-content">
                         <div class="slide">
@@ -90,8 +93,17 @@
                         </div>
                     </div>
                 </div>
-            </section> 
+            </section>
         </div>
+        <div class="dots-container">
+            <div class="dots">
+                <button type="button" id="left" class="dot" onclick="firstBar()"></button>
+                <button type="button" id="center" class="dot" onclick="secondBar()"></button>
+                <button type="button" id="right" class="dot" onclick="thirdBar()"></button>
+            </div>
+        </div>
+    </div>
+ 
     </main>
     <footer class="footer">
         <div class="foot-container">
@@ -107,7 +119,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <form >
+                    <form onsubmit="subscribe();">
                         <div class="input-box">
                             <label for="email"><h4>Subscribe to our mailing list</h4></label>
                             <input type="email" id="email" placeholder="Enter email address" required><input class="submitt-button w-button" type="submit" value="Subscribe">
@@ -127,5 +139,7 @@
         </div>
     </footer>
     <script src="index_script.js"></script>
+    <script src="get-started.js"></script>
+    <script src="subscribe-button.js"></script>
 </body>
 </html>
