@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+    </style>
+</head>
+<body class="text-center" style="background: #d2effa;">
+    <header style="background-image: linear-gradient(-50deg,#333,#10a8e4);" class="header navbar navbar-expand-md navbar-light bg-primary d-flex justify-content-between">
+        <a class="logo navbar-brand" href="index.html">
+            <img class="d-inline-block align-top ms-5" src="img/LEARNIT.png" alt="learnit logo" width="100px" height="30px">
+        </a>
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+        </button>
+        <nav style="width: 60%;" class="collpase navbar-collapse justify-content-center ml-auto w-50" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="navbar-item"><a  class="nav-link text-center text-light" href="features.html">Features</a href=""></li>
+                <li class="navbar-item"><a  class="nav-link text-center text-light" href="pricing.html">Pricing</a href=""></li>
+                <li class="navbar-item"><a  class="nav-link text-center text-light" href="About.html">About us</a href=""></li>
+                <li class="navbar-item"><a  class="nav-link text-center text-light" href="contact.html">Contact</a href=""></li>
+            </ul>
+        </nav>
+        <div class="log_links_wrapper d-sm-none d-md-flex">
+            <ul class="log_links navbar-nav me-6">
+                <a class="nav-link text-light" href="login.html">Login</a href="">
+                <button class="get-started btn btn-primary border border-0 text-light rounded-pill py-2 px-3" style="background-image: linear-gradient(-30deg,#7fffd4,#01868b); background-size: 100% auto;" onclick='navigate()'>Get Started</button>
+            </ul>
+        </div>
+    </header>
+    </div>
+    <main>
+        <div style="width: 350px; height: 650px; background: #b2d6ef; margin-top:6%; margin-bottom: 6%;" class="form-box position-relative mx-auto rounded p-1 overflow-hidden shadow">
+            <img src="img/LEARNIT.png" alt="learnit logo" width="100px" height="30px" class="w-25 mt-0">
+            <div style="width: 220px;" class="button-box my-4 mx-auto position-relative shadow rounded-pill bg-white">
+                <div id="btn" style="left: 0; top: 0; width: 110px;background-image: linear-gradient(-30deg,#7fffd4,#01868b); transition: 0.5s;" class=" position-absolute h-100 rounded-pill"></div>
+                <button type="button" class="toggle-btn  px-3 border-0 position-relative" style="padding-top: 10px; padding-bottom: 10px; background: transparent; outline:none;" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn  px-3 border-0 position-relative" style="padding-top: 10px; padding-bottom: 10px; background: transparent; outline:none;" onclick="signup()">Sign up</button>
+            </div>
+            <form id="login" class="input-group position-absolute" style="left: 50px; width: 280px; transition: 0.5s;" onsubmit="loginalert();">
+                <label for="login_email"></label>
+                <input type="email" style="outline: none;" class="input-field w-100 my-1 py-1 px-0 border border-secondary bg-white" placeholder="Enter Email address" required>
+                <label for="password"></label>
+                <input type="password" style="outline: none;" class="input-field w-100 my-1 py-1 px-0 border border-secondary bg-light" placeholder="password" required>
+                <button type="submit" style="width: 35%;background-image: linear-gradient(-30deg, #7fffd4, #01868b); outline: none;" class="submit-btn py-1 px-3 m-auto border border-0 rounded-pill text-center d-flex justify-content-center align-items-center mb-1 mt-2 fw-light">continue</button>
+                <div class=" col-12">
+                    <h4 style="color: rgba(51, 51, 51, 0.777);" class="text-center my-3 mx-0 fs-5 fw-normal">OR</h4>
+                </div>
+                <div class="bt w-100 m-auto">
+                    <button type="submit" style="background: #d65c0b; outline:0;" class="login google d-flex justify-content-between border border-0 my-2 mx-0 w-100 py-1 px-0"><img style="width: 30%;" class="mt-0" src="img/google-g-2015-logo-svgrepo-com.svg" alt="google logo" width="25px" height="25px"><span style="margin-right: 60px; font-size: 11px;" class="d-flex justify-content-center align-items-center text-white">Continue with google</span></button>
+                    <button type="submit" style="background: rgb(8,88,209);" class="login microsoft d-flex justify-content-between border border-0 my-2 mx-0 w-100 py-1 px-0"><img style="width: 30%;" class="mt-0" src="img/microsoft-svgrepo-com.svg" alt="microsoft logo" width="25px" height="25px"><span style="margin-right: 60px; font-size: 11px;" class=" d-flex justify-content-center align-items-center text-white">Continue with Microsoft</span></button>
+                    <button type="submit" style="background: rgb(5, 60,144);" class="login facebook d-flex justify-content-between border border-0 my-2 mx-0 w-100 py-1 px-0"><img style="width: 30%;" class="mt-0" src="img/facebook-network-communication-internet-interaction-svgrepo-com.svg" alt="facebook logo" width="25px" height="25px"><span style="margin-right: 60px; font-size: 11px;" class="d-flex justify-content-center align-items-center text-white">Continue with Facebook</span></button>
+                </div>
+            </form>
+
+            <form id="signup" style="left: 450px; width: 280px; transition: 0.5s;" class="input-group position-absolute" onsubmit="signupalert();">
+                <label for="username"></label>
+                <input type="text" style="outline: none;" class="input-field w-100 my-1 py-1 px-0 border border-secondary bg-white" id="username" placeholder="Username" required>
+                <label for="new_email"></label>
+                <input type="email" style="outline: none;" class="input-field w-100 my-1 py-1 px-0 border border-secondary bg-white" id="new_email" placeholder="Enter email address" required>
+                <label for="new_password"></label>
+                <input type="password" style="outline: none;" class="input-field w-100 my-1 py-1 px-0 border border-secondary bg-white" id="new_password" placeholder="password" required>
+                <label for="confirm_password"></label>
+                <input type="password" style="outline: none;" class="input-field w-100 my-1 py-1 px-0 border border-secondary bg-white" id="confirm_password" placeholder="confirm password" required>
+                <button type="submit" style="width: 35%;background-image: linear-gradient(-30deg, #7fffd4, #01868b); outline: none;" class="submit-btn py-1 px-3 m-auto border border-0 rounded-pill text-center d-flex justify-content-center align-items-center mb-1 mt-2 fw-light">Signup</button>
+                <div class=" col-12">
+                    <h4 style="color: rgba(51, 51, 51, 0.777);" class="text-center my-3 mx-0 fs-5 fw-normal">OR</h4>
+                </div>
+                <div class="bt w-100 m-auto">
+                    <button type="submit" style="background: #d65c0b; outline:0;" class="login google d-flex justify-content-between border border-0 my-2 mx-0 w-100 py-1 px-0"><img style="width: 30%;" class="mt-0" src="img/google-g-2015-logo-svgrepo-com.svg" alt="google logo" width="25px" height="25px"><span style="margin-right: 60px; font-size: 11px;" class="d-flex justify-content-center align-items-center text-white">Continue with google</span></button>
+                    <button type="submit" style="background: rgb(8,88,209);" class="login microsoft d-flex justify-content-between border border-0 my-2 mx-0 w-100 py-1 px-0"><img style="width: 30%;" class="mt-0" src="img/microsoft-svgrepo-com.svg" alt="microsoft logo" width="25px" height="25px"><span style="margin-right: 60px; font-size: 11px;" class=" d-flex justify-content-center align-items-center text-white">Continue with Microsoft</span></button>
+                    <button type="submit" style="background: rgb(5, 60,144);" class="login facebook d-flex justify-content-between border border-0 my-2 mx-0 w-100 py-1 px-0"><img style="width: 30%;" class="mt-0" src="img/facebook-network-communication-internet-interaction-svgrepo-com.svg" alt="facebook logo" width="25px" height="25px"><span style="margin-right: 60px; font-size: 11px;" class="d-flex justify-content-center align-items-center text-white">Continue with Facebook</span></button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer style="background-color:#094e5d" class="footer py-5">
+        <div class="foot-container mw-100 m-auto">
+            <div class="row d-flex flex-wrap justify-content-between">
+                <div class="footer-col w-25 py-0 px-3 ms-2">
+                    <h4 class="fs-6 text-white text-capitalize text-center mb-2 fw-normal position-relative">navigate</h4>
+                    <ul class="list-group list-unstyled text-center">
+                        <li  class="list-unstyled text-muted mb-2 fw-normal"><a style="text-decoration: none; color: #bbbbbb; transition: all 0.3s ease; font-size: 12px;" class="d-block text-capitalize"  href="features.html">Features</a></li>
+                        <li  class="list-unstyled text-muted mb-2 fw-normal"><a style="text-decoration: none; color: #bbbbbb; transition: all 0.3s ease; font-size: 12px;" class="d-block text-capitalize" href="pricing.html">Pricing</a></li>
+                        <li  class="list-unstyled text-muted mb-2 fw-normal"><a style="text-decoration: none; color: #bbbbbb; transition: all 0.3s ease; font-size: 12px;" class="d-block text-capitalize" href="About.html">About US</a></li>
+                        <li  class="list-unstyled text-muted fw-normal"><a style="text-decoration: none; color: #bbbbbb; transition: all 0.3s ease; font-size: 12px;" class="d-block text-capitalize" href="contact.html">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col w-25 py-0 px-3">
+                    <form onsubmit="subscribe();">
+                        <div class="input-box d-inline-block">
+                            <label for="email"><h4 class="fs-5 text-white text-capitalize mb-2 fw-normal position-relative">Subscribe to our mailing list</h4></label>
+                            <input class="w-100 bg-light text-black mb-0 border border-none fs-6 rounded" type="email" id="email" placeholder="Enter email address" required>
+                            <input class="submitt-button w-button d-inline-block py-2 px-4 mt-4 text-white border-0 border-none rounded ms-4" style="text-decoration: none; background-image: linear-gradient(-30deg, #7fffd4, #01868b);" type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-col w-25 py-0 px-3">
+                    <h4 class="fs-6 text-white fw-normal text-capitalize text-center mb-3 position-relative">follow us</h4>
+                    <div class="social-links d-flex justify-content-center align-items-center">
+                        <i style="height: 40px; width: 40px; line-height:40px; transition: all 0.5s ease; background-color: rgba(255, 255, 255, 0.2);" class="fa-brands fa-linkedin d-inline-block me-2 mb-2 text-center rounded-circle text-white"></i>
+                        <i style="height: 40px; width: 40px; line-height:40px; transition: all 0.5s ease; background-color: rgba(255, 255, 255, 0.2);" class="fa-brands fa-twitter d-inline-block me-2 mb-2 text-center rounded-circle text-white"></i>
+                        <i style="height: 40px; width: 40px; line-height:40px; transition: all 0.5s ease; background-color: rgba(255, 255, 255, 0.2);" class="fa-brands fa-facebook d-inline-block me-2 mb-2 text-center rounded-circle text-white"></i>
+                        <i style="height: 40px; width: 40px; line-height:40px; transition: all 0.5s ease; background-color: rgba(255, 255, 255, 0.2);" class="fa-brands fa-instagram d-inline-block me-2 mb-2 text-center rounded-circle text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="login-script.js"></script>
+    <script src="get-started.js"></script>
+    <script src="login-button.js"></script>
+    <script src="subscribe-button.js"></script>
+    
+</body>
+</html>

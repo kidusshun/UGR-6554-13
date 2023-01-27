@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.get-started:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+    cursor: pointer;
+}
+   
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    li,a{
+        font-size: 12px;
+    }
+    .get-started{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    li,a{
+        font-size: 11px;
+    }
+    .get-started{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    li,a{
+        font-size: 10px;
+    }
+    .get-started{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* main */
+@media only screen and (max-width: 900px){
+    .motto p{
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 608px){
+    .motto p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 476px){
+    .background1{
+        height: 100vh;
+    }
+    .motto{
+        height: 70vh;
+    }
+}
+
+
+
+@media only screen and (max-width: 1050px){
+    .container{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 821px){
+    .grid-wrapper:last-child{
+        margin-bottom: 20px;
+    }
+    .container{
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .container{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 414px){
+    .container{
+        width: 80%;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 321px){
+    .motto p{
+        font-size: 7px;
+    }
+    .grid-wrapper{
+        height: 100vh;
+    }
+    .container{
+        height: 80vh;
+    }
+    .slide p{
+        font-size: 10px;
+    }
+
+    .details .name{
+        font-size: 16px;
+    }
+    .dots{
+        margin-top: 80px;
+        height: 5px;
+    }
+    .dot{
+        width: 7px;
+        height: 7px;
+    }
+
+}
+@media only screen and (max-width: 1025px){
+    html{
+        height: 100%;
+    }
+    .background1{
+        height: 90vh;
+    }
+    .motto{
+        width: 80%;
+        margin: 20px 70px;
+    }
+    .motto p{
+        font-size: 11px;
+    }
+    .grid-wrapper{
+        height: 100vh;
+    }
+    .container{
+        margin-top: 100px;
+        height: 60vh;
+    }
+    .slide p{
+        font-size: 11px;
+    }
+    .dots-container{
+        margin-top: 50px;
+    }
+    .details .name{
+        font-size: 14px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 376px){
+    .motto{
+        height: 80vh;
+    }
+    .motto p{
+        font-size: 7px;
+    }
+    .grid-wrapper{
+        height: 100vh;
+    }
+    .container{
+        height: 80vh;
+    }
+    .slide p{
+        font-size: 8px;
+    }
+
+    .details .name{
+        font-size: 16px;
+    }
+    .dots{
+        margin-top: 80px;
+        height: 5px;
+    }
+    .dot{
+        width: 7px;
+        height: 7px;
+    }
+
+}
+
+.motto-content p{
+    font-size: 1vw;
+}
+
+@media (max-width:1100px){
+    .motto-content p{
+        font-size: 2vw;
+    }
+}
+
+#first{
+    left: 150px;
+}
+
+@media (max-width: 700px){
+    #first{
+        left:50px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px ;
+    }
+}
+
+
+@media(max-width: 574){
+    .footer-col{
+        width: 100%;
+    }
+}

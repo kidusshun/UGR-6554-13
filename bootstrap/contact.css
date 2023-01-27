@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.get-started:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+    cursor: pointer;
+}
+   
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    li,a{
+        font-size: 12px;
+    }
+    .get-started{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    li,a{
+        font-size: 11px;
+    }
+    .get-started{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    li,a{
+        font-size: 10px;
+    }
+    .get-started{
+        font-size: 10px;
+    }
+}
+
+/* main */
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+         flex-direction: column;
+    }
+    .contact .contact-info{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:844px){
+    .contact-form h2{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:376px){
+    .contact{
+        padding: 50px 50px;
+    }
+    .contact .content h1{
+        font-size: 25px;
+    }
+
+    .text p{
+        font-size: 0.5em;
+    }
+    p i{
+        margin:0;
+    }
+    .contact-form{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:723px){
+    h1{
+        font-size: 0.8em;
+    }
+    .contact{
+        padding: 50px 50px;
+    }
+    .box p{
+        font-size: 0.8em;
+    }
+    .box{
+        padding: 5px 0;
+    }
+    .contact-form{
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width:550px){
+    .contact-form{
+        width: 90%;
+        padding: 40px 25px;
+    }
+    .box p{
+        font-size: 0.6em;
+    }
+}
+
+
+/* footer */
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px ;
+    }
+}
+
+
+@media(max-width: 574){
+    .footer-col{
+        width: 100%;
+    }
+}

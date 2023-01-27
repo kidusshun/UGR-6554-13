@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.get-started:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+    cursor: pointer;
+}
+   
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    li,a{
+        font-size: 12px;
+    }
+    .get-started{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    li,a{
+        font-size: 11px;
+    }
+    .get-started{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    li,a{
+        font-size: 10px;
+    }
+    .get-started{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 856px){
+    p{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .wrapper{
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .wrapper p{
+        font-size: 0.6em;
+    }
+}
+
+
+@media only screen and (max-width: 559px){
+    h1{
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px ;
+    }
+}
+
+
+@media(max-width: 574){
+    .footer-col{
+        width: 100%;
+    }
+}
